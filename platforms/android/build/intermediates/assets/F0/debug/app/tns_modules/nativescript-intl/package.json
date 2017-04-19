@@ -1,0 +1,98 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-intl@~0.0.8",
+        "scope": null,
+        "escapedName": "nativescript-intl",
+        "name": "nativescript-intl",
+        "rawSpec": "~0.0.8",
+        "spec": ">=0.0.8 <0.1.0",
+        "type": "range"
+      },
+      "C:\\Users\\Mickey\\Groceries\\node_modules\\nativescript-angular"
+    ]
+  ],
+  "_from": "nativescript-intl@>=0.0.8 <0.1.0",
+  "_id": "nativescript-intl@0.0.10",
+  "_inCache": true,
+  "_location": "/nativescript-intl",
+  "_nodeVersion": "6.9.1",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/nativescript-intl-0.0.10.tgz_1482411985601_0.5281858304515481"
+  },
+  "_npmUser": {
+    "name": "nsndeck",
+    "email": "nedyalko.nikolov@telerik.com"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-intl@~0.0.8",
+    "scope": null,
+    "escapedName": "nativescript-intl",
+    "name": "nativescript-intl",
+    "rawSpec": "~0.0.8",
+    "spec": ">=0.0.8 <0.1.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/nativescript-angular"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-intl/-/nativescript-intl-0.0.10.tgz",
+  "_shasum": "2a310f07f627344f75db547177db18298d430b0e",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-intl@~0.0.8",
+  "_where": "C:\\Users\\Mickey\\Groceries\\node_modules\\nativescript-angular",
+  "author": {
+    "name": "Nedyalko Nikolov",
+    "email": "nedyalko.nikolov@telerik.com"
+  },
+  "dependencies": {},
+  "description": "Provides API for using Native date, time and number formatting with an API similar to Intl.js",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "2a310f07f627344f75db547177db18298d430b0e",
+    "tarball": "https://registry.npmjs.org/nativescript-intl/-/nativescript-intl-0.0.10.tgz"
+  },
+  "keywords": [
+    "NativeScript",
+    "localization",
+    "globalization",
+    "formatting",
+    "currency",
+    "nativescript-angular"
+  ],
+  "maintainers": [
+    {
+      "name": "hamorphis",
+      "email": "rossen.hristov@progress.com"
+    },
+    {
+      "name": "hdeshev",
+      "email": "hristo@deshev.com"
+    },
+    {
+      "name": "nsndeck",
+      "email": "nedyalko.nikolov@telerik.com"
+    },
+    {
+      "name": "tns-bot",
+      "email": "nativescript@telerik.com"
+    }
+  ],
+  "name": "nativescript-intl",
+  "nativescript": {
+    "platforms": {
+      "android": "2.3.0",
+      "ios": "2.3.0"
+    }
+  },
+  "optionalDependencies": {},
+  "readme": "Welcome to the `nativescript-intl` plugin for NativeScript framework \r\n\r\n# Prerequisites\r\n\r\n- installed [NativeScript](https://github.com/NativeScript/NativeScript)\r\n- installed [NativeScript-CLI](https://github.com/NativeScript/nativescript-cli)\r\n\r\n# Install `nativescript-intl` plugin.\r\n\r\nNavigate to project folder and run `NativeScript-CLI` command `tns plugin add nativescript-intl`.\r\n\r\nThis plugin provides similar to [Intl.js](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Intl) API for date, time and number formatting on a mobile device (Android and iOS).\r\n\r\n## How to use\r\n\r\n```JavaScript\r\nvar intl = require(\"nativescript-intl\");\r\nvar dateFormat = new intl.DateTimeFormat('en-US', {'year': 'numeric', 'month': 'short', 'day': 'numeric'}).format(new Date(2016, 2, 23));\r\nvar numberFormat = new intl.NumberFormat('en-US', {'style': 'currency', 'currency': 'USD', 'currencyDisplay': 'symbol'}).format(123456.789);\r\n\r\nconsole.log(\"dateFormat: \" + dateFormat);\r\nconsole.log(\"numberFormat: \" + numberFormat);\r\n// prints Mar 23, 2016\r\n// $123456.79\r\n```\r\n\r\nSince localization formatting is not exactly same on Android, iOS and [Intl.js](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Intl) there is another option to use this API.\r\n\r\n## Custom pattern\r\n\r\n```JavaScript\r\nvar intl = require(\"nativescript-intl\");\r\nvar dateFormat = new intl.DateTimeFormat(null, null, 'y MMMM d, EEEE HH:mm:ss').format(new Date(2016, 2, 23, 12, 35, 40));\r\nvar numberFormat = new intl.NumberFormat('en-US', {'style': 'currency', 'currency': 'USD', 'currencyDisplay': 'symbol'}, '#,##0.00 ¤').format(123456.789);\r\n\r\nconsole.log(\"dateFormat: \" + dateFormat);\r\nconsole.log(\"numberFormat: \" + numberFormat);\r\n// prints 2016 March 23, Wednesday 2016 12:35:40\r\n// 123,456.79 $\r\n```\r\n\r\n> Omitting locale will use the current locale setting on device.\r\n\r\n> Keep in mind that ICU versions differ accross device OS versions, so this plugin could produce different results on a different API level (Android) and OS version (iOS).\r\n",
+  "readmeFilename": "README.md",
+  "scripts": {},
+  "version": "0.0.10"
+}

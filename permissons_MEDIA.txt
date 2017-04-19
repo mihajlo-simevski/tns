@@ -1,0 +1,2 @@
+<uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" granted="true" flags="0" />
+<item name="android.permission.WRITE_MEDIA_STORAGE" granted="true" flags="0" />
