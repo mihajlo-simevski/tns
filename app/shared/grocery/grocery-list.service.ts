@@ -9,6 +9,8 @@ import { Grocery } from "./grocery";
 @Injectable()
 export class GroceryListService {
   constructor(private http: Http) {}
+
+  //add
   add(name: string) {
   let headers = new Headers();
   headers.append("Authorization", "Bearer " + Config.token);
@@ -25,6 +27,20 @@ export class GroceryListService {
   })
   .catch(this.handleErrors);
 }
+//delete
+delete(id: string) {
+  let headers = new Headers();
+  headers.append("Authorization", "Bearer " + Config.token);
+  headers.append("Content-Type", "application/json");
+
+  return this.http.delete(
+    Config.apiUrl + "Groceries/" + id,
+    { headers: headers }
+  )
+  .map(res => res.json())
+  .catch(this.handleErrors);
+}
+//load
 
   load() {
     let headers = new Headers();
