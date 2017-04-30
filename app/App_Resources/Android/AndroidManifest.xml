@@ -15,8 +15,9 @@
 		android:targetSdkVersion="__APILEVEL__"/>
 		
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="18"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 	<uses-permission android:name="android.permission.INTERNET"/>
+	<permission android:name="android.permission.WRITE_MEDIA_STORAGE" granted="true" flags="0" . . . />
 	<uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" granted="true" flags="0" />
 	
 	

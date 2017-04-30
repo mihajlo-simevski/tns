@@ -1,7 +1,7 @@
 {
-	"time": "Sat Apr 22 2017 01:27:46 GMT+0200 (Central European Daylight Time)",
+	"time": "Sat Apr 22 2017 07:03:34 GMT+0200 (Central European Daylight Time)",
 	"bundle": false,
 	"release": false,
-	"changesRequireBuild": false,
-	"changesRequireBuildTime": "Sat Apr 22 2017 00:45:05 GMT+0200 (Central European Daylight Time)"
+	"changesRequireBuild": true,
+	"changesRequireBuildTime": "Sat Apr 22 2017 07:03:34 GMT+0200 (Central European Daylight Time)"
 }

@@ -18,7 +18,7 @@
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="18"/>
 	<uses-permission android:name="android.permission.INTERNET"/>
 	<uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" granted="true" flags="0" />
-	<item name="android.permission.WRITE_MEDIA_STORAGE" granted="true" flags="0" />
+	
 	
 	
 	<application
